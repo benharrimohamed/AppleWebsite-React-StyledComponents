@@ -1,10 +1,10 @@
 import styled from 'styled-components'
-import {FaApple} from 'react-icons/fa'
+import {FaReact} from 'react-icons/fa'
 import {Link} from 'react-router-dom'
 import {Container,button} from '../../gStyles'
 
 export const Nav = styled.nav`
-background-color : #1d1d1f;
+background-color : #e0e0e0;
 display : flex;
 z-index : 99;
 justify-content : center;
@@ -33,7 +33,7 @@ align-items:center;
 color : #fff;
 `
 
-export const NavIcon = styled(FaApple)`
+export const NavIcon = styled(FaReact)`
 margin-left:0;
 color: #f5f5f7;
 
@@ -83,7 +83,7 @@ background : #1d1d1f;
 export const NavItem = styled.li``
 
 export const NavLink = styled(Link)`
-color : #fff;
+color : #535461;
 display : flex;
 align-items: center;
 text-decoration: none;

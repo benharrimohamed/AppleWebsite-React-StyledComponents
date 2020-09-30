@@ -25,7 +25,7 @@ export const NavBar = () => {
 
     return (
         <React.Fragment>
-          <IconContext.Provider value={{color : '#f5f5f7'}}>
+          <IconContext.Provider value={{color : '#535461'}}>
           <Nav>
               <NavBarContainer>
                   <NavLogo>
@@ -42,31 +42,15 @@ export const NavBar = () => {
                       </NavItem>
                       <NavItem>
                           <NavLink to='/mac' exact>
-                              Mac
+                              Tips
                           </NavLink>
                       </NavItem>
                       <NavItem>
                           <NavLink to='/iphone' exact>
-                             iPhone
+                             Technologies
                           </NavLink>
                       </NavItem>
-                      <NavItem>
-                          <NavLink to='/watch' exact>
-                             Watch
-                          </NavLink>
-                      </NavItem>
-                      <NavItemBtn>
-                          {button ? (<NavBtnLink to="/sign-up">
-                              <Button primary>Sign Up</Button>
-                          </NavBtnLink>) : (
-                             <NavBtnLink to="/sign-up">
-                                 <Button primary>Sign up</Button>
-                             </NavBtnLink>
-                          )
-                          }
-                      </NavItemBtn>
                   </NavMenu>
-
               </NavBarContainer>
           </Nav>
           </IconContext.Provider>

@@ -28,7 +28,7 @@ padding-left:20px;
 
 export const Button = styled.button`
 border-radius : 4px;
-background : ${({primary}) => (primary ? '#5C8EF2' : '#0467FB')};
+background : #FD5692;
 white-space: nowrap;
 color: #fff;
 padding : ${({big}) => (big ? '12px 64px' : '10px 20px')};
@@ -39,7 +39,7 @@ cursor: pointer;
 
 &:hover {
     transition : all 0.2s ease-in;
-    background : #3D79F2;
+    background : #F15692; 
 }
 
 @media screen and (max-width : 960px)

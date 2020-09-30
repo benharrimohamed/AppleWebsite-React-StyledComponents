@@ -5,8 +5,7 @@ import {FaApple} from 'react-icons/fa'
 export const AppleIcon = styled(FaApple)`
 `
 
-export const LandingSec = styled.div`
-background : #fff;
+export const SectionRoot = styled.div`
 padding : 80px 0;
 `
 
@@ -17,11 +16,10 @@ margin:0 -15px -15px -15px;
 flex-wrap: wrap;
 align-items: center;
 flex-direction : ${({imgStart}) => (imgStart ? 'row-reverse' : 'row')};
-
 @media screen and (max-width:786px){
 margin-top:5px;
+align-items:center;
 }
-
 `
 
 
@@ -90,6 +88,28 @@ max-width: 100%;
 vertical-align : middle;
 display : inline-block;
 max-height:500px;
+`
+
+export const PanelTips = styled.div`
+border:1px solid #535461;
+padding:15px;
+background-color:#fff;
+border-radius :10px;
+overflow:hidden;
+`
+
+export const PanelTipsDescription = styled.div`
+padding:15px;
+color:#000;
+`
+
+export const PanelTipsHeadLine = styled.h3`
+font-size : 1.5em;
+color : #000;
+`
+export const PanelTipsParagraph = styled.p`
+font-size:1em;
+color:#000;
 `
 
 
