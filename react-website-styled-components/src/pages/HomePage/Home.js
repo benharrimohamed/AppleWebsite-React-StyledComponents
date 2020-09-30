@@ -1,9 +1,14 @@
 import React from 'react'
-import {LandingSec} from '../../components/LandingSection/LandingSection'
+import {LandingSection} from '../../components/LandingSection/LandingSection'
+import {HomeDataObj} from './Data'
 export const Home = () => {
     return (
         <React.Fragment>
-            
+           <LandingSection 
+           TopLine={HomeDataObj.TopLine}
+           HeadLine={HomeDataObj.Headline}
+           Subtitle={HomeDataObj.Subtitle}
+           />
         </React.Fragment>
     )
 }
