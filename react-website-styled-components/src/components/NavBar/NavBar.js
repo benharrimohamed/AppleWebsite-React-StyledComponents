@@ -1,5 +1,16 @@
 import React,{useState} from 'react'
-import {Nav,NavBarContainer,NavLogo,NavIcon, MobileIcon,NavMenu,NavItem,NavLink,Button} from './NavBar.elements'
+import {Button} from '../../gStyles'
+import {
+    Nav,
+    NavBarContainer,
+    NavLogo,
+    NavIcon,
+    MobileIcon,
+    NavMenu,
+    NavItem,
+    NavLink,
+    NavBtnLink,
+    NavItemBtn} from './NavBar.elements'
 import {FaTimes , FaBars} from 'react-icons/fa'
 import {IconContext} from 'react-icons/lib'
 
@@ -8,10 +19,13 @@ export const NavBar = () => {
     const [openMobileMenu, setOpenMobileMenu] = useState(false);
     const handleOpenMobileMenu = () => setOpenMobileMenu(!openMobileMenu) 
 
+    const [button,setButton] = useState(true);
+    const showButton = () => setButton(false);
+
 
     return (
         <React.Fragment>
-          <IconContext.Provider value={{color : '#fff'}}>
+          <IconContext.Provider value={{color : '#f5f5f7'}}>
           <Nav>
               <NavBarContainer>
                   <NavLogo>
@@ -27,21 +41,26 @@ export const NavBar = () => {
                           </NavLink>
                       </NavItem>
                       <NavItem>
-                          <NavLink to='/services' exact>
-                              Services
+                          <NavLink to='/mac' exact>
+                              Mac
                           </NavLink>
                       </NavItem>
                       <NavItem>
-                          <NavLink to='/about' exact>
-                             About
+                          <NavLink to='/iphone' exact>
+                             iPhone
+                          </NavLink>
+                      </NavItem>
+                      <NavItem>
+                          <NavLink to='/watch' exact>
+                             Watch
                           </NavLink>
                       </NavItem>
                       <NavItemBtn>
                           {button ? (<NavBtnLink to="/sign-up">
-                              <Button>Sign Up</Button>
+                              <Button primary>Sign Up</Button>
                           </NavBtnLink>) : (
                              <NavBtnLink to="/sign-up">
-                                 <Button>Sign up</Button>
+                                 <Button primary>Sign up</Button>
                              </NavBtnLink>
                           )
                           }

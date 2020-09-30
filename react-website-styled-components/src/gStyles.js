@@ -17,7 +17,7 @@ margin-left:auto;
 margin-right : auto;
 z-index:1;
 padding-right:50px;
-padding-left:50px;
+padding-left:20px;
 
 
 @media screen and (max-width:991) {
@@ -26,20 +26,20 @@ padding-left:50px;
 } 
 `
 
-export const button = styled.button`
+export const Button = styled.button`
 border-radius : 4px;
-background : '#0467FB';
+background : ${({primary}) => (primary ? '#5C8EF2' : '#0467FB')};
 white-space: nowrap;
-color: '#fff';
-font-size : '16px';
+color: #fff;
+padding : ${({big}) => (big ? '12px 64px' : '10px 20px')};
+font-size : ${({fontBig}) => (fontBig ? '20px' : '16px')};
 outline : none;
 border:none;
 cursor: pointer;
 
 &:hover {
-    transition : all 0.3s ease-in;
-    background : #fff;
-
+    transition : all 0.2s ease-in;
+    background : #3D79F2;
 }
 
 @media screen and (max-width : 960px)
