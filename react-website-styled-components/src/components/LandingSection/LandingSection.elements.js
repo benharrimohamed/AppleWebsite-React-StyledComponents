@@ -7,7 +7,7 @@ export const AppleIcon = styled(FaApple)`
 
 export const LandingSec = styled.div`
 background : #fff;
-padding : 160px 0;
+padding : 80px 0;
 `
 
 
@@ -77,9 +77,20 @@ font-size:18px;
 line-height:24px;
 color: #1d1d1f;
 ` 
+export const ImgWarpper = styled.div`
+max-width:555px;
+display:flex;
+justify-content :${({start}) => (start ? 'flex-satrt' : 'flex-end')};
+`
 
-
-
+export const Img = styled.img`
+padding-right :0;
+border :0;
+max-width: 100%;
+vertical-align : middle;
+display : inline-block;
+max-height:500px;
+`
 
 
 
