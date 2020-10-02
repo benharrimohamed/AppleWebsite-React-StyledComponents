@@ -8,7 +8,6 @@ import {Root,
         BubbleHeadLine,
         BubbleImgWarpper,
         BubbleImage}  from './MiddleSection.elements'
-import {tip1 , tip2, tip3 , tip4,tip5,tip6,Bubble7} from './Data'
 import {Slide,Zoom} from 'react-reveal';
 
 const MiddleSection = (props) => {

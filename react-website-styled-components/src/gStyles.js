@@ -27,6 +27,7 @@ padding-left:20px;
 `
 
 export const Button = styled.button`
+display : ${({display}) => (display ? 'normal' : 'none')};
 border-radius : 4px;
 background : #FD5692;
 white-space: nowrap;

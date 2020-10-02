@@ -12,24 +12,23 @@ import {
     Img,
     } from './LandingSection.elements'
 import {Container} from '../../gStyles'
-import Data from './Data'
 import {Bounce} from 'react-reveal';
 
-export const LandingSection = () => {
-    
+export const LandingSection = (props) => {
+    const {start,Landing} = props
     return (
         <React.Fragment>
             <SectionRoot>
                 <Container>
-                  <SectionRow>
+                  <SectionRow start={start}>
                     <SectionColumn>
                         <Bounce top>
                         <TextWarpper>
-                            <HeadLine>{Data.HeadLine}</HeadLine>
-                            <Subtitle>{Data.Subtitle}</Subtitle>
+                            <HeadLine>{Landing.HeadLine}</HeadLine>
+                            <Subtitle>{Landing.Subtitle}</Subtitle>
                             <Link to='/sign-up'>
-                                <Button big fontBig>
-                                    {Data.ButtonLabel}
+                                <Button big fontBig display={Landing.ButtonDisplay}>
+                                    {Landing.ButtonLabel}
                                 </Button>
                             </Link>
                         </TextWarpper> 
@@ -37,8 +36,8 @@ export const LandingSection = () => {
                     </SectionColumn>
                     <SectionColumn>
                         <Bounce right>
-                        <ImgWarpper>
-                        <Img src={Data.ImgURL} />
+                        <ImgWarpper start={start}>
+                        <Img src={Landing.ImgURL} />
                         </ImgWarpper>
                         </Bounce>
                     </SectionColumn>

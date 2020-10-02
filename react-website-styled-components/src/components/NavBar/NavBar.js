@@ -8,11 +8,10 @@ import {
     MobileIcon,
     NavMenu,
     NavItem,
-    NavLink,
-    NavBtnLink,
-    NavItemBtn} from './NavBar.elements'
+    NavLink,} from './NavBar.elements'
 import {FaTimes , FaBars} from 'react-icons/fa'
 import {IconContext} from 'react-icons/lib'
+import {Link} from 'react-scroll'
 
 export const NavBar = () => {
     
@@ -41,8 +40,10 @@ export const NavBar = () => {
                           </NavLink>
                       </NavItem>
                       <NavItem>
-                          <NavLink to='/technologie' exact>
-                             Technologies
+                          <NavLink>
+                          <Link to='technologie' spy={true} smooth={true} duration={1000}>
+                            Technologies
+                          </Link>
                           </NavLink>
                       </NavItem>
                   </NavMenu>

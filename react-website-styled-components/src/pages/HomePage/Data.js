@@ -1,10 +1,20 @@
 export const Landing = {
 
-    Headline :'How To Be A Good Developer ?',
+    HeadLine :'How To Be A Good Developer ?',
     Subtitle : 'Coding is an evolving discipline. That’s often what draws people to it , aside from the opportunity to work with some of the biggest companies in the world ,but it also means that those in the industry need to constantly look forward',
     ImgURL: require('../../assets/hello.svg'),
-    ButtonLabel : 'Learn more ...'
+    ButtonLabel : 'Learn more ...',
+    ButtonDisplay : true
 
+ }
+
+ export const ReactInf = {
+
+    HeadLine :'React Styled Components',
+    Subtitle : 'styled-components is the result of wondering how we could enhance CSS for styling React component systems. By focusing on a single use case we managed to optimize the experience for developers as well as the output for end users.',
+    ImgURL: require('../../assets/react.svg'),
+    ButtonLabel : 'Learn more ...',
+    ButtonDisplay : false
  }
 
  export const tip1 = {

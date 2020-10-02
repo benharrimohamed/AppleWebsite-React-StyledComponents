@@ -7,6 +7,8 @@ export const AppleIcon = styled(FaApple)`
 
 export const SectionRoot = styled.div`
 padding : 80px 0;
+padding-left:120px;
+padding-right:120px;
 `
 
 
@@ -15,7 +17,7 @@ display : flex;
 margin:0 -15px -15px -15px;
 flex-wrap: wrap;
 align-items: center;
-flex-direction : ${({imgStart}) => (imgStart ? 'row-reverse' : 'row')};
+flex-direction : ${({start}) => (start ? 'row-reverse' : 'row')};
 @media screen and (max-width:786px){
 margin-top:5px;
 align-items:center;
