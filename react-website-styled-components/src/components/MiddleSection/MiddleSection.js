@@ -8,83 +8,92 @@ import {Root,
         BubbleHeadLine,
         BubbleImgWarpper,
         BubbleImage}  from './MiddleSection.elements'
-import {Bubble1 , Bubble2, Bubble3 , Bubble4,Bubble5,Bubble6,Bubble7} from './Data'
-import Zoom from 'react-reveal/Zoom';
+import {tip1 , tip2, tip3 , tip4,tip5,tip6,Bubble7} from './Data'
+import {Slide,Zoom} from 'react-reveal';
 
-const MiddleSection = () => {
+const MiddleSection = (props) => {
+    const {tip1,tip2,tip3,tip4,tip5,tip6} = props
     return (
         <React.Fragment>
             <Root>
             <Row>
                 <Column>
-                <Zoom bottom>
+                <Slide left>
                     <BubblePanel>
                         <BubbleImgWarpper>
-                            <BubbleImage src={Bubble1.ImageURL}/>
+                            <BubbleImage src={tip1.ImageURL}/>
                         </BubbleImgWarpper>
                         <BubbleDescription>
-                            <BubbleHeadLine>{Bubble1.HeadLine}</BubbleHeadLine>
-                            <BubbleParagraphe>{Bubble1.Paragraph}</BubbleParagraphe>
+                            <BubbleHeadLine>{tip1.HeadLine}</BubbleHeadLine>
+                            <BubbleParagraphe>{tip1.Paragraph}</BubbleParagraphe>
+                        </BubbleDescription>
+                    </BubblePanel>
+                </Slide>
+                </Column>
+                <Column>
+                <Zoom top>
+                    <BubblePanel>
+                        <BubbleImgWarpper>
+                            <BubbleImage src={tip2.ImageURL}/>
+                        </BubbleImgWarpper>
+                        <BubbleDescription>
+                            <BubbleHeadLine>{tip2.HeadLine}</BubbleHeadLine>
+                            <BubbleParagraphe>{tip2.Paragraph}</BubbleParagraphe>
                         </BubbleDescription>
                     </BubblePanel>
                 </Zoom>
                 </Column>
                 <Column>
+                <Slide bottom>
+                    <BubblePanel>
+                        <BubbleImgWarpper>
+                            <BubbleImage src={tip3.ImageURL}/>
+                        </BubbleImgWarpper>
+                        <BubbleDescription>
+                            <BubbleHeadLine>{tip3.HeadLine}</BubbleHeadLine>
+                            <BubbleParagraphe>{tip3.Paragraph}</BubbleParagraphe>
+                        </BubbleDescription>
+                    </BubblePanel>
+                </Slide>
+                </Column>
+                <Column>
                 <Zoom bottom>
                     <BubblePanel>
                         <BubbleImgWarpper>
-                            <BubbleImage src={Bubble2.ImageURL}/>
+                            <BubbleImage src={tip4.ImageURL}/>
                         </BubbleImgWarpper>
                         <BubbleDescription>
-                            <BubbleHeadLine>{Bubble2.HeadLine}</BubbleHeadLine>
-                            <BubbleParagraphe>{Bubble2.Paragraph}</BubbleParagraphe>
+                            <BubbleHeadLine>{tip4.HeadLine}</BubbleHeadLine>
+                            <BubbleParagraphe>{tip4.Paragraph}</BubbleParagraphe>
                         </BubbleDescription>
                     </BubblePanel>
                 </Zoom>
                 </Column>
                 <Column>
+                <Zoom Top>
                     <BubblePanel>
                         <BubbleImgWarpper>
-                            <BubbleImage src={Bubble3.ImageURL}/>
+                            <BubbleImage src={tip5.ImageURL}/>
                         </BubbleImgWarpper>
                         <BubbleDescription>
-                            <BubbleHeadLine>{Bubble3.HeadLine}</BubbleHeadLine>
-                            <BubbleParagraphe>{Bubble3.Paragraph}</BubbleParagraphe>
+                            <BubbleHeadLine>{tip5.HeadLine} </BubbleHeadLine>
+                            <BubbleParagraphe>{tip5.Paragraph}</BubbleParagraphe>
                         </BubbleDescription>
                     </BubblePanel>
+                </Zoom>
                 </Column>
                 <Column>
+                <Slide right>
                     <BubblePanel>
                         <BubbleImgWarpper>
-                            <BubbleImage src={Bubble4.ImageURL}/>
+                            <BubbleImage src={tip6.ImageURL}/>
                         </BubbleImgWarpper>
                         <BubbleDescription>
-                            <BubbleHeadLine>{Bubble4.HeadLine}</BubbleHeadLine>
-                            <BubbleParagraphe>{Bubble4.Paragraph}</BubbleParagraphe>
+                            <BubbleHeadLine>{tip6.HeadLine}</BubbleHeadLine>
+                            <BubbleParagraphe>{tip6.Paragraph}</BubbleParagraphe>
                         </BubbleDescription>
                     </BubblePanel>
-                </Column>
-                <Column>
-                    <BubblePanel>
-                        <BubbleImgWarpper>
-                            <BubbleImage src={Bubble5.ImageURL}/>
-                        </BubbleImgWarpper>
-                        <BubbleDescription>
-                            <BubbleHeadLine>{Bubble5.HeadLine} </BubbleHeadLine>
-                            <BubbleParagraphe>{Bubble5.Paragraph}</BubbleParagraphe>
-                        </BubbleDescription>
-                    </BubblePanel>
-                </Column>
-                <Column>
-                    <BubblePanel>
-                        <BubbleImgWarpper>
-                            <BubbleImage src={Bubble6.ImageURL}/>
-                        </BubbleImgWarpper>
-                        <BubbleDescription>
-                            <BubbleHeadLine>{Bubble6.HeadLine}</BubbleHeadLine>
-                            <BubbleParagraphe>{Bubble6.Paragraph}</BubbleParagraphe>
-                        </BubbleDescription>
-                    </BubblePanel>
+                </Slide>
                 </Column>
             </Row>
             </Root>

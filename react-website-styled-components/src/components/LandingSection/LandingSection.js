@@ -13,7 +13,7 @@ import {
     } from './LandingSection.elements'
 import {Container} from '../../gStyles'
 import Data from './Data'
-
+import {Bounce} from 'react-reveal';
 
 export const LandingSection = () => {
     
@@ -23,6 +23,7 @@ export const LandingSection = () => {
                 <Container>
                   <SectionRow>
                     <SectionColumn>
+                        <Bounce top>
                         <TextWarpper>
                             <HeadLine>{Data.HeadLine}</HeadLine>
                             <Subtitle>{Data.Subtitle}</Subtitle>
@@ -31,12 +32,15 @@ export const LandingSection = () => {
                                     {Data.ButtonLabel}
                                 </Button>
                             </Link>
-                        </TextWarpper>  
+                        </TextWarpper> 
+                        </Bounce> 
                     </SectionColumn>
                     <SectionColumn>
+                        <Bounce right>
                         <ImgWarpper>
                         <Img src={Data.ImgURL} />
                         </ImgWarpper>
+                        </Bounce>
                     </SectionColumn>
                   </SectionRow>
                 </Container>

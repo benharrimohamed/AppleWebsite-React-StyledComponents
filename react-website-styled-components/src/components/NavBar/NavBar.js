@@ -41,12 +41,7 @@ export const NavBar = () => {
                           </NavLink>
                       </NavItem>
                       <NavItem>
-                          <NavLink to='/mac' exact>
-                              Tips
-                          </NavLink>
-                      </NavItem>
-                      <NavItem>
-                          <NavLink to='/iphone' exact>
+                          <NavLink to='/technologie' exact>
                              Technologies
                           </NavLink>
                       </NavItem>

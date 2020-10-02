@@ -5,9 +5,10 @@ import {
 } from './components'
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import GlobalStyle from './gStyles'
-
 import {Home} from './pages/HomePage/Home'
-function App() {
+import {Technologie} from './pages/TechnologiePage/Technologie'
+
+const App = () => {
   return (
     <React.Fragment>
       <Router>
@@ -15,6 +16,7 @@ function App() {
        <NavBar />
        <Switch>
          <Route path='/' exact component={Home}/>
+         <Route path='/technologie' exact component={Technologie}/>
        </Switch>
       </Router>
     </React.Fragment>
