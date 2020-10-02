@@ -10,14 +10,12 @@ import {
     Subtitle,
     ImgWarpper,
     Img,
-    PanelTips,
-    PanelTipsDescription,
-    PanelTipsHeadLine
     } from './LandingSection.elements'
 import {Container} from '../../gStyles'
+import Data from './Data'
 
 
-export const LandingSection = (props) => {
+export const LandingSection = () => {
     
     return (
         <React.Fragment>
@@ -26,18 +24,18 @@ export const LandingSection = (props) => {
                   <SectionRow>
                     <SectionColumn>
                         <TextWarpper>
-                            <HeadLine>{props.HeadLine}</HeadLine>
-                            <Subtitle>{props.Subtitle}</Subtitle>
+                            <HeadLine>{Data.HeadLine}</HeadLine>
+                            <Subtitle>{Data.Subtitle}</Subtitle>
                             <Link to='/sign-up'>
                                 <Button big fontBig>
-                                    {props.ButtonLabel}
+                                    {Data.ButtonLabel}
                                 </Button>
                             </Link>
                         </TextWarpper>  
                     </SectionColumn>
                     <SectionColumn>
                         <ImgWarpper>
-                        <Img src={props.ImgURL} />
+                        <Img src={Data.ImgURL} />
                         </ImgWarpper>
                     </SectionColumn>
                   </SectionRow>

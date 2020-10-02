@@ -90,27 +90,5 @@ display : inline-block;
 max-height:500px;
 `
 
-export const PanelTips = styled.div`
-border:1px solid #535461;
-padding:15px;
-background-color:#fff;
-border-radius :10px;
-overflow:hidden;
-`
-
-export const PanelTipsDescription = styled.div`
-padding:15px;
-color:#000;
-`
-
-export const PanelTipsHeadLine = styled.h3`
-font-size : 1.5em;
-color : #000;
-`
-export const PanelTipsParagraph = styled.p`
-font-size:1em;
-color:#000;
-`
-
 
 
